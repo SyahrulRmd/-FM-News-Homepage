@@ -1,10 +1,7 @@
-console.log('asdadas');
-
 const menu = document.querySelector('#menu-icon');
 const close = document.querySelector('#close-icon');
 const nav = document.querySelector('.header-nav.mobile .menu');
 const backdrop = document.querySelector('.header-nav.mobile .backdrop');
-console.log(nav);
 
 menu.addEventListener('click', () => {
     openMenu();
