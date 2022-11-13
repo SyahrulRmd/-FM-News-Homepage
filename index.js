@@ -2,8 +2,10 @@ const menu = document.querySelector('#menu-icon');
 const close = document.querySelector('#close-icon');
 const nav = document.querySelector('.header-nav.mobile .menu');
 const backdrop = document.querySelector('.header-nav.mobile .backdrop');
-
+console.log('dadadas');
 menu.addEventListener('click', () => {
+    console.log('open');
+
     openMenu();
 })
 
@@ -16,13 +18,15 @@ backdrop.addEventListener('click', () => {
 })
 
 const openMenu = () => {
+    console.log('open');
+
     nav.setAttribute('style', 'transform: translateX(0)');
-    backdrop.setAttribute('style', 'display: block');
-    menu.setAttribute('style', 'display: none');
+    backdrop.setAttribute('style', 'opacity: 1; z-index: 99');
+
 }
 
 const closeMenu = () => {
     nav.setAttribute('style', 'transform: translateX(110%)');
-    backdrop.setAttribute('style', 'display: none');
-    menu.setAttribute('style', 'display: block');
+    backdrop.setAttribute('style', 'opacity: 0; z-index: -1');
+
 }
